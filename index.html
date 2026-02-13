@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Binance Investment Tracking Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:#0b0f17;
+color:#e6e6e6;
+}
+
+.container{
+max-width:420px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1{
+text-align:center;
+font-size:22px;
+}
+
+.demo{
+text-align:center;
+font-size:11px;
+color:#ffcc66;
+margin-bottom:30px;
+}
+
+input{
+width:100%;
+padding:14px;
+border-radius:10px;
+border:none;
+background:#11151f;
+color:white;
+font-size:14px;
+}
+
+button{
+width:100%;
+margin-top:16px;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#f0b90b;
+font-weight:600;
+cursor:pointer;
+}
+
+.profile{
+background:#11151f;
+padding:18px;
+border-radius:14px;
+margin-top:25px;
+display:none;
+}
+
+.avatar{
+width:60px;
+height:60px;
+border-radius:50%;
+background:#222;
+margin-bottom:12px;
+}
+
+.label{
+color:#9aa0ad;
+font-size:12px;
+margin-top:8px;
+}
+
+.value{
+font-size:14px;
+margin-top:4px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Investment Portal</h1>
+<div class="Real World">Real World Environment</div>
+
+<input type="text" id="search" placeholder="Enter UID / Reference Number">
+
+<button onclick="searchProfile()">Search</button>
+
+<div class="profile" id="profileCard">
+
+<div class="avatar"></div>
+
+<div class="label">User Name</div>
+<div class="value">XXX</div>
+
+<div class="label">UID</div>
+<div class="value">1145524815</div>
+
+<div class="label">Email</div>
+<div class="value">a***********10@g****.com</div>
+
+<button onclick="goToReceipts()">View Investment Receipts</button>
+
+</div>
+
+</div>
+
+<script>
+
+function searchProfile(){
+document.getElementById("profileCard").style.display="block";
+}
+
+function goToReceipts(){
+window.location.href="receipts.html";
+}
+
+</script>
+
+</body>
+</html>
